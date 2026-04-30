@@ -1,0 +1,70 @@
+* { background-color: #181818; }
+
+/* Heading */
+.h-heading {
+    font-family: "Contrail One";
+    font-size: 4.5rem;
+    padding-left: 1.3rem;
+}
+.h-heading span { color: #F7B41A; }
+
+/* Navbar Center */
+.nav-center a { margin-right: 2rem; } /* spacing between links */
+.nav-center a:hover { color: #F7B41A; }
+
+/* Navbar Right */
+.nav-right i { font-size: 18px; cursor: pointer; }
+
+/* Login Button */
+.login-btn {
+    border: 2px solid #F7B41A;
+    color: white;
+    border-radius: 30px;
+    padding: 6px 18px;
+}
+.login-btn:hover { background-color: #F7B41A; color: black; }
+
+/* Get Started */
+.get-btn {
+    background-color: #F7B41A;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+/* Customers Images */
+.customers {
+    position: relative;
+}
+.customers img {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #181818;
+}
+.customers img:nth-child(2) { position: absolute; left: 30px; }
+.customers img:nth-child(3) { position: absolute; left: 60px; }
+
+/* Extra */
+.text-3 { font-family: "Contrail One"; }
+.text-4 { font-family: "Poppins"; }
+.img-1 { max-width: 140px; margin-left: -20px; }
+.last-text { margin-left: 70px; }
+
+/* Hero Image */
+.hero-img { max-width: 100%; }
+
+/* RESPONSIVE PART */
+@media (max-width: 992px) {
+    .h-heading { font-size: 3rem; padding-left: 0; }
+    .img-1 { margin-left: 0; }
+    .last-text { margin-left: 0; text-align: center; margin-top: 90px; }
+    .customers { justify-content: center; margin-top: 50px; }
+    .nav-center { margin-bottom: 1rem; } /* mobile spacing for links */
+}
+
+@media (max-width: 576px) {
+    .h-heading { font-size: 2.3rem; }
+    .customers img { width: 50px; }
+    .last-text { margin-top: 70px; }
+}
